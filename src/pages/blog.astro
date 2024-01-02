@@ -1,5 +1,8 @@
 ---
 const pageTitle = "Mi segunda variable astro";
+import '../style/main.css'
+import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
 ---
 <html lang="es">
   <head>
@@ -8,10 +11,7 @@ const pageTitle = "Mi segunda variable astro";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="blog.html">Blog</a>
-
+    <Header/>
     <h1>Mi blog de aprendizaje sobre Astro</h1>
     <p>Aquí es donde publicaré acerca de mi viaje aprendiendo Astro./p>
     <ul>
@@ -19,5 +19,9 @@ const pageTitle = "Mi segunda variable astro";
       <li><a href="/posts/post-2/">Publicación 2</a></li>
       <li><a href="/posts/post-3/">Publicación 3</a></li>
     </ul>
+    <Footer/>
+    <script>
+      import '../scripts/menu.js'
+    </script>
   </body>
 </html>
