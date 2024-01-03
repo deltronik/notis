@@ -2,6 +2,7 @@
   "name": "danote",
   "type": "module",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,6 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.0.8"
+    "@astrojs/preact": "^3.0.2",
+    "@astrojs/rss": "^4.0.1",
+    "astro": "^4.0.8",
+    "preact": "^10.19.3"
   }
 }
